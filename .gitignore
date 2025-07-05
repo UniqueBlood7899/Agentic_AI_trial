@@ -1,0 +1,87 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+.genkit/*
+.env*
+
+# firebase
+firebase-debug.log
+firestore-debug.log
+
+# Generated downloads and workspaces
+public/downloads/*.tar.gz
+public/downloads/*.zip
+workspaces/*/
+!workspaces/.gitkeep
+node_modules/
+public/downloads/*.tar.gz
+workspaces/**/next-swc.darwin-arm64.node
+public/downloads/*.zip
+workspaces/
+public/downloads/*.tar.gz
+workspaces/**/next-swc.darwin-arm64.node
+
+# Large files and platform-specific binaries
+**/*.node
+**/@next/swc-*/
+**/@next/swc-*/*.node
+.next/cache/swc/**/*
+
+# Large media and data files
+*.mp4
+*.mov
+*.avi
+*.tar
+*.gz
+*.zip
+*.rar
+*.7z
+*.iso
+*.dmg
+*.sql
+*.dmp
+*.model
+*.onnx
+*.h5
+*.weights
+
+# Docker related
+docker/**/data
+**/node_modules/.cache
+.docker/
