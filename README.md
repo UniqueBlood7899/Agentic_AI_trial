@@ -1,6 +1,6 @@
 # Sandbox AI Coding Agent
 
-A comprehensive coding agent platform similar to bolt.new with full sandboxing, VNC desktop environment, and orchestration layer. Create, modify, and interact with applications in isolated Docker containers with full GUI support.
+A comprehensive coding agent platform with full sandboxing, VNC desktop environment, and orchestration layer. Create, modify, and interact with applications in isolated Docker containers with full GUI support.
 
 ## Features
 
@@ -42,17 +42,6 @@ npm run dev
 3. Click "Create Job" and wait for completion
 4. Access your interactive development environment
 
-Create a new task:
-```bash
-curl -X POST http://localhost:3000/api/schedule \
-  -H "Content-Type: application/json" \
-  -d '{"task":"Build me a todo app in React"}'
-```
-
-Check job status:
-```bash
-curl http://localhost:3000/api/status/[job-id]
-```
 
 ## API Endpoints
 
@@ -73,7 +62,7 @@ Manage VNC-enabled Docker containers for each project.
 
 ### POST/DELETE /api/preview/:id
 Start/stop live preview servers for applications.
-```
+
 
 ## Architecture
 
@@ -203,7 +192,3 @@ The system can be tested with various task types:
 ```bash
 "Build a REST API with Node.js and Express, plus a React frontend that displays data from the API"
 ```
-
-## License
-
-MIT
